@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SimplePorfolioComponent } from './simple-porfolio/simple-porfolio.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SimplePorfolioComponent
   ],
   imports: [
     BrowserModule,
