@@ -1,5 +1,97 @@
-<h2>Cards</h2>
 
+
+
+<h2>Demo card layout in flexbox mode</h2>
+<div class="row small-up-6 medium-up-4">
+  <div class="columns flex-container">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png" alt="">
+      <div class="card-section">
+        <h4>Tall Card</h4>
+        <p>I'm the tallest card in the row. By default, all the other cards in the same row will be 
+          only as tall as the content inside of them. However, making their container, <code>display: flex</code> will
+          make sure the column in the row are the same height. All this will also allows the cards inside those columns to
+          grow to the height of the column.
+        </p>
+      </div>
+      <div class="card-divider">
+        <button class="button">Button</button>
+      </div>
+    </div>
+  </div>
+  <div class="columns flex-container">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png" alt="">
+      <div class="card-section">
+        <h4>Shorter card</h4>
+        <p>I'm the shorter card. Adding the <code>.flex-container</code> class to the card's parent (in this case the column)
+        will make it display flex and therefore share the same height as other columns in its row.</p>
+      </div>
+      <div class="card-divider flex-container">
+        <button type="button" class="button flex-child-grow">Submit</button>
+      </div>
+    </div>
+  </div>
+  <div class="columns flex-container">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png" alt="">
+      <div class="card-section">
+        <h4>Shortest Card</h4>
+        <p>I'm the shortest card in the row. I don't have much content here but I'm still equal height.</p>
+      </div>
+      <div class="card-divider">
+        <button class="button">Submit</button>
+      </div>
+    </div>
+  </div>
+  <div class="columns flex-container">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png" alt="">
+      <div class="card-section">
+        <h4>Tall Card</h4>
+        <p>I'm the tallest card in the row. By default, all the other cards in the same row will be 
+          only as tall as the content inside of them. However, making their container, <code>display: flex</code> will
+          make sure the column in the row are the same height. All this will also allows the cards inside those columns to
+          grow to the height of the column.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="columns flex-container">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png" alt="">
+      <div class="card-section">
+        <h4>Shorter card</h4>
+        <p>I'm the shorter card. Adding the <code>.flex-container</code> class to the card's parent (in this case the column)
+        will make it display flex and therefore share the same height as other columns in its row.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est fugit odit corporis, odio inventore. Accusantium vero, inventore veritatis eos consequatur quia. Ipsa, optio doloribus. Consectetur nihil ex beatae iure adipisci et dicta saepe nemo, debitis, perferendis architecto natus? Molestiae quisquam voluptates voluptate consectetur quidem, quia commodi reiciendis assumenda itaque aut.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="columns flex-container">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png" alt="">
+      <div class="card-section">
+        <h4>Shortest Card</h4>
+        <p>I'm the shortest card in the row. I don't have much content here but I'm still equal height.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="flex-container align-justify">
+  <div class="columns"><img src="/assets/img/generic/500x300.png" alt=""></div>
+  <div class="columns"><img src="/assets/img/generic/500x300.png" alt=""></div>
+  <div class="columns"><img src="/assets/img/generic/500x300.png" alt=""></div>
+</div>
+<div class="row">
+  <div class="medium-6 large-4 columns">12/6/4 columns</div>
+  <div class="medium-6 large-8 columns">12/6/8 columns</div>
+</div>
+
+<h2>Cards</h2>
 <p>A card is just an element with a <code>.card</code> class applied. You can put any kind of content inside. Make sure you
   wrap your content in a <code>.card-section</code> element in order to achieve the traditional card look.</p>
 
@@ -11,9 +103,298 @@
   <div class="card-divider">
     This is a header
   </div>
-  <img src="http://foundation.zurb.com/sites/docs/assets/img/generic/rectangle-1.jpg">
+  <img src="/assets/img/generic/rectangle-1.jpg">
   <div class="card-section">
     <h4>This is a card.</h4>
     <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  </div>
+</div>
+
+
+
+<h2>Card layout</h2>
+<h2>Cards</h2>
+
+<p>A card is just an element with a <code>.card</code> class applied. You can put any kind of content inside. Make sure you
+  wrap your content in a <code>.card-section</code> element in order to achieve the traditional card look.</p>
+
+<p>A card container has no padding, allowing you to place full-bleed images inside. Use the <code>.card-divider</code> and <code>.card-section</code>  classes to sub-divide a card.</p>
+
+<p>You can arrange the card classes in any order that suits your content. See below:</p>
+
+<div class="row medium-unstack">
+  <div class="column medium-4 flex-container">
+    <div class="card">
+      <div class="card-divider">
+        This is a header
+      </div>
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column medium-4 flex-container">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column medium-4 flex-container">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-divider">
+        What's going on here?
+      </div>
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Place your image inside the <code>.card-section</code> wrapper to have padding around it.</p>
+
+<div class="row medium-unstack">
+  <div class="column medium-4">
+    <div class="card">
+      <div class="card-section">
+        <img src="/assets/img/generic/500x300.png">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column medium-4">
+    <div class="card">
+      <div class="card-section">
+        <img src="/assets/img/generic/500x300.png">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column medium-4">
+    <div class="card">
+      <div class="card-section">
+        <img src="/assets/img/generic/500x300.png">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>As you can see, sizing the cards within grid columns works well. You can use the Foundation <a href="https://foundation.zurb.com/sites/docs/flex-grid.html#block-grids">Block Grid</a>  for even width cards.</p>
+
+<div class="row small-up-2 medium-up-3 large-up-4 align-center">
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/assets/img/generic/500x300.png">
+      <div class="card-section">
+        <h4>This is a card.</h4>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+      <div class="card-divider">
+        <ul class="menu">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
