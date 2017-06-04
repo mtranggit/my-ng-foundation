@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngf works!';
+  public navs = [
+    {link: 'card', title: 'Card Component'},
+    {link: 'flex', title: 'Flexbox Layout'},
+    {link: 'navbar', title: 'Navigation Bar'},
+    {link: 'simple', title: 'Simple Portfolio'}
+  ];
 }

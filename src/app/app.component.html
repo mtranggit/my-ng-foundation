@@ -1,1 +1,12 @@
+<header>
+    <div class="row">
+        <nav>
+            <ul>
+                <li *ngFor="let nav of navs">
+                    <a [routerLink]="nav.link">{{ nav.title}}</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <router-outlet></router-outlet>
