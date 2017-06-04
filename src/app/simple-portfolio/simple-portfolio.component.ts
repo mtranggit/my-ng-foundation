@@ -1,13 +1,13 @@
 import { Component, OnInit, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'ngf-simple-porfolio',
-  templateUrl: './simple-porfolio.component.html',
-  styleUrls: ['./simple-porfolio.component.scss'],
+  selector: 'ngf-simple-portfolio',
+  templateUrl: './simple-portfolio.component.html',
+  styleUrls: ['./simple-portfolio.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SimplePorfolioComponent implements OnInit {
+export class SimplePortfolioComponent implements OnInit {
 
   constructor() { }
 

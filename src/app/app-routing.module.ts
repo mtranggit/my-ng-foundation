@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { SimplePorfolioComponent } from './simple-porfolio/simple-porfolio.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { CardComponent } from './card/card.component';
 const routes: Routes = [
   { path: '', redirectTo: 'simple', pathMatch: 'full' },
   {
-    path: 'navbar', component: NavBarComponent
+    path: 'navbar',
+    loadChildren: 'app/nav-bar/nav-bar.module#NavBarModule'
   },
   {
-    path: 'simple', component: SimplePorfolioComponent, pathMatch: 'full'
+    path: 'simple',
+    loadChildren: 'app/simple-portfolio/simple-portfolio.module#SimplePortfolioModule'
   },
   {
     path: 'flex',
